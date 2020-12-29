@@ -1,1 +1,2 @@
-# code-quiz
+# jQuery-Powered Coding Quiz
+## Updated README incoming...
