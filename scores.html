@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz: Race the Clock</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+</head>
+<body>
+    <!--Navigation-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="scores.html">High Scores</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+        </header>
+
+        <!--Main container-->
+        <div id="contentCard" class="card w-50 mx-auto border-white">
+            <div class="card-title">
+                <h1 class="display-4">High Scores</h1>
+                <h5 class="font-weight-light">Are you on here? Keep or delete your legacy.</h5>
+                <hr>
+            <div class="card-body">
+            <h5>Rankings</h5>
+              <div class="btn-group-vertical">
+                <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
+                <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
+                <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
+                <button class="btn-sm btn-dark" type="button" data-toggle="collapse" data-target="#correctChoice" aria-expanded="false" aria-controls="correctChoice">
+                  Right Answer
+                </button>
+                <div class="collapse" id="correctChoice">
+                <div class="text small">
+                  Correct!
+                </div>
+              </div>
+            </div>
+         </div>
+        </div>
+        <!--This button will link back to the quiz!-->
+        <a class="btn btn-white text-muted border" href="index.html" role="button">Back to Quiz</a>
+        </div>
+        
+        <!--These scripts from JS Bundle ensure that the navigation bar toggles correctly.-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    </body>
+    </html>
