@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Code Quiz: Race the Clock</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <script src="script.js"></script>
 </head>
 <body>
     <!--Navigation-->
@@ -22,37 +24,23 @@
         </header>
 
         <!--Main container-->
-        <div id="contentCard" class="card w-50 mx-auto border-white">
+        <div id="contentCard" class="card w-25 mx-auto border-white">
             <div class="card-title">
                 <h1 class="display-4">High Scores</h1>
                 <h5 class="font-weight-light">Are you on here? Keep or delete your legacy.</h5>
                 <hr>
             <div class="card-body">
             <h5>Rankings</h5>
-              <div class="btn-group-vertical">
-                <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
-                <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
-                <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
-                <button class="btn-sm btn-dark" type="button" data-toggle="collapse" data-target="#correctChoice" aria-expanded="false" aria-controls="correctChoice">
-                  Right Answer
-                </button>
-                <div class="collapse" id="correctChoice">
-                <div class="text small">
-                  Correct!
-                </div>
-              </div>
-            </div>
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputName2">Initials</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Your Initials">
+              <button type="submit" class="btn-sm btn-dark mb-2">Submit</button>
+              </form>
          </div>
         </div>
         <!--This button will link back to the quiz!-->
         <a class="btn btn-white text-muted border" href="index.html" role="button">Back to Quiz</a>
         </div>
-        
-        <!--These plugins will help easily save high scores to local storage.-->
-        <script src="/path/to/jquery.min.js"></script>
-        <script src="/path/to/savestorage.js"></script>
-        <!--$('#myform').saveStorage();-->
-        
-    
+
     </body>
     </html>
