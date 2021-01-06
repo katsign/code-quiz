@@ -9,6 +9,10 @@
     cursor: pointer;
 }
 
+.btn-lg:hover {
+    cursor: pointer;
+}
+
 .hidden {
     display: none;
 }

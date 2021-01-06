@@ -3,6 +3,7 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
+const clock = document.querySelector("gameClock");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -98,13 +99,13 @@ let questions = [
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
 
-//GAME PLAY STRUCTURE
+    //GAME PLAY STRUCTURE
     startGame = () => {
-        questionCounter = 0;
-        score = 0;
-        availableQuestions = [...questions];
-        getNewQuestion();
-    };
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
+};
 
     getNewQuestion = () => {
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
@@ -164,3 +165,27 @@ const MAX_QUESTIONS = 10;
 };
     //TRIGGERS GAME
     startGame();
+
+    //SETTING THE TIMER
+    let gameClock = availableQuestions.length * 15;
+
+    var countdown = function() {
+    var timeInterval = setInterval(function() {
+        if(gameClock > 0 && play === true) {
+            clock.innerText = gameClock;
+            gameClock--;
+        } else {
+            clock.innerText = gameClock;
+            clearInterval(timeInterval);
+            endGame();
+        }
+        }, 1000);
+        };
+
+    //ENDS IF CLOCK RUNS OUT
+    var endQuiz = function() {
+        if(gameClock < 0) {
+            gameClock = 0;
+            clock.innerText = gameClock;
+        }
+};

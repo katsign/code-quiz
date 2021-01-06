@@ -10,6 +10,7 @@
     <link rel='icon' href='favicon.ico' type='image/x-icon'/>
 </head>
 <body>
+
     <!--Navigation-->
     <header>
     <nav class="navbar navbar-expand-md navbar-light bg-white">
@@ -21,6 +22,13 @@
         </div>
       </nav>
     </header>
+    
+    <!--Game timer floats below navigation.-->
+    <div id="gameClockContainer" class="col text-right">
+        <h5 class="text-danger">Time: 
+            <span id="gameClock"></span>
+        </h5>
+    </div>
 
 <!--Main container for the Q cards to shuffle!-->
 <div id="question-card" class="card w-50 mx-auto border-white">
@@ -29,8 +37,38 @@
       <h5 class="font-weight-light">Answer the questions while keeping an eye on the clock. Wrong answers deduct time!</h5>
       <hr>
   <div class="card-body">
-            <button onclick="window.location.href='game.html'" class="btn-lg btn-dark font-weight-bold" id="startBtn">Let's Go!</button>
+       <!--"Heads up" display shows question number and score.-->
+  <div id="heads-up-display" class="col text-center">
+      <div id="hud-item">
+          <h5 class="small font-weight-light hud-prefix">
+              Question
+          </h5>
+          <h5 class="hud-main-text" id="questionCounter">
+              1/10
+          </h5>
+      </div> 
+   </div>
+  <div id="heads-up-display" class="col text-center">
+      <div id="hud-item">
+          <h5 class="small font-weight-light hud-prefix">
+              Score
+          </h5>
+          <h5 class="hud-main-text" id="score">
+              0
+          </h5>
+      </div> 
+   </div>
+   <hr>
+   <!--Dynamically populated Q card.-->
+        <div class="card-body">
+          <h5 id="question">This is the first question card?</h5>
+          <div class="btn-group-vertical">
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="1">Choice 1</button>
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="2">Choice 2</button>
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="3">Choice 3</button>
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="4">Choice 4</button>
         </div>
+    </div>
     </div>
     </div>
 
@@ -38,5 +76,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
