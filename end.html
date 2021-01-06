@@ -29,13 +29,28 @@
         <!--Main Container-->
         <div id="contentCard" class="card w-50 mx-auto border-white">
             <div class="card-title">
-                <h1 class="display-4">High Scores</h1>
-                <h5 class="font-weight-light">Keep or delete your legacy.</h5>
+                <h1 class="display-4">All Done</h1>
+                <h5 class="font-weight-light">How'd you do?</h5>
                 <hr>
-            <div class="card-body" id="cardNoPad">
-                <ul id="highScoresList">
-                    <!--JS populated-->
-                </ul>
+            <div class="card-body">
+                <h5 class=" col text-center">Final Score:</h5>
+                <h5 class="display-4  col text-center" id="finalScore"></h5>
+                <hr>
+                <h5 class="font-weight-light">Save to High Scores</h5>
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input 
+                type="text"
+                class="form-control mb-2 mr-sm-2" 
+                id="inlineFormInputName2"
+                placeholder="Your Name">
+                <button 
+                type="submit" 
+                class="btn-sm btn-dark mb-2" 
+                id="saveScoreBtn"
+                onclick="saveHighScore(event)"
+                disabled>Save</button>
+            </form>
          </div>
         </div>
         <!--This button will link back to the quiz!-->
@@ -46,6 +61,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="scores.js"></script>
+    <script src="end.js"></script>
 </body>
 </html>

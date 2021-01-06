@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel='icon' href='favicon.ico' type='image/x-icon'/>
-    <script src="script.js"></script>
 </head>
 <body>
     <!--Navigation-->
@@ -27,26 +26,43 @@
         <h5 class="text-danger">Time: <span id="gameClock">0</span></h5>
     </div>
 
-    <!--Main container for the Q cards to shuffle!-->
-    <div id="contentCard" class="card w-50 mx-auto border-white">
-        <div class="card-title">
-            <h1 class="display-4">Going Code Mode</h1>
-            <h5 class="font-weight-light">Answer the questions while keeping an eye on the clock. Wrong answers deduct time!</h5>
-            <hr>
+<!--Main container for the Q cards to shuffle!-->
+<div id="question-card" class="card w-50 mx-auto border-white">
+  <div class="card-title">
+      <h1 class="display-4">Going Code Mode</h1>
+      <h5 class="font-weight-light">Answer the questions while keeping an eye on the clock. Wrong answers deduct time!</h5>
+      <hr>
+  <div class="card-body">
+       <!--"Heads up" display shows question number and score.-->
+  <div id="heads-up-display" class="col text-center">
+      <div id="hud-item">
+          <h5 class="small font-weight-light hud-prefix">
+              Question
+          </h5>
+          <h5 class="hud-main-text" id="questionCounter">
+              1/10
+          </h5>
+      </div> 
+   </div>
+  <div id="heads-up-display" class="col text-center">
+      <div id="hud-item">
+          <h5 class="small font-weight-light hud-prefix">
+              Score
+          </h5>
+          <h5 class="hud-main-text" id="score">
+              0
+          </h5>
+      </div> 
+   </div>
+   <hr>
+   <!--Dynamically populated Q card.-->
         <div class="card-body">
-          <h5>This is the first question card?</h5>
+          <h5 id="question">This is the first question card?</h5>
           <div class="btn-group-vertical">
-            <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
-            <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
-            <button href="#" class="btn-sm btn-dark">Wrong Answer</button>
-            <button class="btn-sm btn-dark" type="button" data-toggle="collapse" data-target="#correctChoice" aria-expanded="false" aria-controls="correctChoice">
-              Right Answer
-            </button>
-          <div class="collapse" id="correctChoice">
-            <div class="text small">
-              Correct!
-            </div>
-          </div>
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="1">Choice 1</button>
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="2">Choice 2</button>
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="3">Choice 3</button>
+            <button href="#" class="btn-sm btn-dark choice-text" data-number="4">Choice 4</button>
         </div>
     </div>
     </div>
@@ -56,5 +72,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

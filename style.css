@@ -1,4 +1,43 @@
+/* CUSTOM + UTILITIES */
+
 .btn-sm {
     margin-top:2px;
     margin-bottom:2px;
 }
+
+.btn-sm:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    background-color: #28a745!important;
+}
+
+.incorrect {
+    background-color: #d9534f!important;
+}
+
+dt {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#cardNoPad {
+    padding: 0!important;
+}
+
+#highScoresList {
+    padding: 0!important;
+    list-style: none;
+}
+
+.high-score:hover {
+    transform: scale(1.025);
+    cursor: default;
+}
+
