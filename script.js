@@ -111,7 +111,7 @@ const MAX_QUESTIONS = 10;
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
         //GO TO END GAME PAGE
-        return window.location.assign("/end.html");
+        return window.location.assign("./end.html");
         }
 
     questionCounter++;
