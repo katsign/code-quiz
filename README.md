@@ -17,7 +17,7 @@ User Input            |  High Scores
 
 
 ### Link to Deployed Project:
-* https://katsign.github.io/password-generator/
+* katsign.github.io/code-quiz/
 
 ## Method and Approach
 
