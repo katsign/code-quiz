@@ -3,13 +3,15 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById('questionCounter');
 const scoreText = document.getElementById('score');
-const clock = document.querySelector("gameClock");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
+var timerEl = document.querySelector("gameClock");
+var gameClock = availableQuestions.length * 15;
 
 //QUESTION ARRAY TO DYNAMICALLY POPULATE THE Q CARD
 let questions = [
@@ -104,6 +106,7 @@ const MAX_QUESTIONS = 10;
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
+    timerEl = setInterval(countdown, 1000);
     getNewQuestion();
 };
 
@@ -167,25 +170,10 @@ const MAX_QUESTIONS = 10;
     startGame();
 
     //SETTING THE TIMER
-    let gameClock = availableQuestions.length * 15;
-
-    var countdown = function() {
-    var timeInterval = setInterval(function() {
-        if(gameClock > 0 && play === true) {
-            clock.innerText = gameClock;
-            gameClock--;
-        } else {
-            clock.innerText = gameClock;
-            clearInterval(timeInterval);
-            endGame();
+    function countdown() {
+        time --;
+        clock.textContent = gameClock;
+        if (time <=0) {
+            clearInterval(timerEl);
         }
-        }, 1000);
-        };
-
-    //ENDS IF CLOCK RUNS OUT
-    var endQuiz = function() {
-        if(gameClock < 0) {
-            gameClock = 0;
-            clock.innerText = gameClock;
-        }
-};
+    };

@@ -8,3 +8,8 @@ highScoresList.innerHTML =
     return `<dt class="high-score">${score.name} — ${score.score}</dt>`;
     })
     .join("");
+
+//WHEN BUTTON IS CLICKED, CLEAR LOCAL STORAGE
+function clearLocalStorage() {
+    localStorage.clear();
+}

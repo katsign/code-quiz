@@ -45,3 +45,12 @@ dt {
     cursor: default;
 }
 
+#clearScores {
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+#clearScores:hover {
+    cursor: pointer;
+}
+
