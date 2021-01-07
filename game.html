@@ -26,7 +26,7 @@
     <!--Game timer floats below navigation.-->
     <div id="gameClockContainer" class="col text-right">
         <h5 class="text-danger">Time: 
-            <span id="gameClock"></span>
+            <span id="timerDisplay"></span>
         </h5>
     </div>
 
@@ -71,6 +71,8 @@
     </div>
     </div>
     </div>
+
+    <script>window.onload = startTimer();</script>
 
     <!--JS links for Bootstrap compatibility!-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

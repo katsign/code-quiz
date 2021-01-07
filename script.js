@@ -10,8 +10,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-var time = availableQuestions.length * 15;
-var clock = document.querySelector("gameClock");
+var timer = document.querySelector("timerDisplay");
 
 //QUESTION ARRAY TO DYNAMICALLY POPULATE THE Q CARD
 let questions = [
@@ -169,23 +168,22 @@ const MAX_QUESTIONS = 10;
     startGame();
 
     //SETTING THE TIMER
-    var countdown = function() {
-    var timeInterval = setInterval(function() {
-        if(gameClock > 0 && play === true) {
-            clock.innerText = gameClock;
-            gameClock--;
-        } else {
-            clock.innerText = gameClock;
-            clearInterval(timeInterval);
-            endGame();
+    (function() {
+        var sec = availableQuestions.length * 15;
+        function startTimer(){
+            var timer = setInterval(function(){
+                sec--;
+                document.getElementById('timerDisplay').innerHTML='00:'+sec;
+                if (sec < 0) {
+                    clearInterval(timer);
+                    alert("Time is up!")
+                }
+            }, 1000);
         }
-        }, 1000);
-        };
-
-    //ENDS IF CLOCK RUNS OUT
-    var endQuiz = function() {
-        if(gameClock < 0) {
-            gameClock = 0;
-            clock.innerText = gameClock;
-        }
-};
+        document.getElementsByClassName('incorrect').addEventListener('click', function() {
+            sec -= 5;
+            document.getElementById('timerDisplay').innerHTML='00:'+sec;
+        });
+    })();
+    
+window.onload = startTimer();
