@@ -4,11 +4,11 @@
 This quiz game will take the user through 10 different questions, accruing points for right answers and docking time for missed ones. At the end, the user can save their score to the high scores log, or clear the existing entries. The main elements in play are click events, utilizing local storage and writing functions in JavaScript.
 
 ## Demo
-Character Prompt            |  Uppercase Prompt
+Landing Page            |  Gameplay Format
 :-------------------------:|:-------------------------:
 ![Demo of Code Quiz: Race the Clock Home](screenshots/index.png)  |  ![Demo of Code Quiz: Race the Clock Gameplay](screenshots/game.png)
 
-Lowercase Prompt            |  Number Prompt
+User Input            |  High Scores
 :-------------------------:|:-------------------------:
 ![Demo of Code Quiz: Race the Clock End Screen](screenshots/end.png)  |  ![Demo of Code Quiz: Race the Clock High Scores](screenshots/scores.png)
 
