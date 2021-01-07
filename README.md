@@ -17,7 +17,7 @@ User Input            |  High Scores
 
 
 ### Link to Deployed Project:
-* katsign.github.io/code-quiz/
+* https://katsign.github.io/code-quiz/
 
 ## Method and Approach
 
