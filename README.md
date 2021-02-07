@@ -1,7 +1,7 @@
 # JavaScript-Powered Coding Quiz
 ## A web API quiz that puts your introductory programming knowledge to the test. 
 
-This quiz game will take the user through 10 different questions, accruing points for right answers and docking time for missed ones. At the end, the user can save their score to the high scores log, or clear the existing entries. The main elements in play are click events, utilizing local storage and writing functions in JavaScript.
+This quiz game will take the user through 10 different questions about JavaScript coding methods. At the end, the user can save their score to the high scores log, or clear the existing entries. The main elements in play are click events, utilizing local storage and function syntax in JavaScript.
 
 ## Demo
 Landing Page            |  Gameplay Format
