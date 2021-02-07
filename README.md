@@ -6,11 +6,11 @@ This quiz game will take the user through 10 different questions, accruing point
 ## Demo
 Landing Page            |  Gameplay Format
 :-------------------------:|:-------------------------:
-![Demo of Code Quiz: Race the Clock Home](screenshots/index.png)  |  ![Demo of Code Quiz: Race the Clock Gameplay](screenshots/game.png)
+![Demo of Code Quiz: Race the Clock Home](./assets/screenshots/index.png)  |  ![Demo of Code Quiz: Race the Clock Gameplay](./assets/screenshots/game.png)
 
 User Input            |  High Scores
 :-------------------------:|:-------------------------:
-![Demo of Code Quiz: Race the Clock End Screen](screenshots/end.png)  |  ![Demo of Code Quiz: Race the Clock High Scores](screenshots/scores.png)
+![Demo of Code Quiz: Race the Clock End Screen](./assets/screenshots/end.png)  |  ![Demo of Code Quiz: Race the Clock High Scores](./assets/screenshots/scores.png)
 
 
 
